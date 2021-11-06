@@ -2,9 +2,13 @@
 # Turtle
 
 import turtle
+import time
 slowpoke = turtle.Turtle()
 slowpoke.fillcolor('#008080')
 slowpoke.shape('turtle')
+
+time.sleep(2)
+slowpoke.right(3*360)
 
 slowpoke.pencolor('green')
 slowpoke.right(90)
@@ -48,8 +52,8 @@ for i in range(22):
     slowpoke.forward(21-i)
     slowpoke.right(360/(pow(22-i,1/3)*40))
 slowpoke.left(165)
-slowpoke.forward(70)
+slowpoke.forward(72)
 
 slowpoke.pencolor('#008080')
-slowpoke.right(3*360)
+slowpoke.right(3*360+180)
 turtle.mainloop()
